@@ -1,0 +1,678 @@
+
+/*--------------------------------------------*\
+  #@FONT-FACES
+\*-------------------------------------------*/
+@font-face{
+			font-family: 'Montserrat';
+			src: url("webfonts/montserrat-bold.eot"); /* IE9 */
+			src: url("webfonts/montserrat-bold.eot?#iefix") 
+			format("embedded-opentype"), /* IE6-IE8 */
+			
+			url("webfonts/montserrat-bold.woff2") format("woff2"), /* Geupdate WOFF formats (W3C standaard) */
+			url("webfonts/montserrat-bold.woff") format("woff"),	 /* Moderne browsers (W3C standaard) */		
+			url("webfonts/montserrat-bold.ttf") format("truetype"), /* Safari, Android iOS */
+			url("webfonts/montserrat-bold.svg") format("svg"); /* Ultieme fallback */
+			}
+
+
+@font-face{
+			font-family: 'Open Sans';
+			src: url("webfonts/opensans-regular.eot"); /* IE9 */
+			src: url("webfonts/opensans-regular.eot?#iefix") 
+			format("embedded-opentype"), /* IE6-IE8 */
+			
+			url("webfonts/opensans-regular.woff2") format("woff2"), /* Geupdate WOFF formats (W3C standaard) */
+			url("webfonts/opensans-regular.woff") format("woff"),	 /* Moderne browsers (W3C standaard) */		
+			url("webfonts/opensans-regular.ttf") format("truetype"), /* Safari, Android iOS */
+			url("webfonts/opensans-regular.svg") format("svg"); /* Ultieme fallback */
+			}
+
+/*--------------------------------------------*\
+  #@KEY-FRAMES
+\*-------------------------------------------*/
+
+@keyframes carouselSliderTestimonial{
+			0%		{ left: 0; }
+			29.12% 	{ left: 0; }
+			33.28%	{ left: -105%; }
+			62.4% 	{ left: -105%; }
+			66.56% 	{ left: -215%; }
+			95.68%	{ left: -215%; }
+			100%	{ left: 0; }
+			}
+
+/*--------------------------------------------*\
+  #EIGEN REST STYLES TOEGEVOEGD
+\*-------------------------------------------*/
+
+html {font-size: 100%}
+
+h2{
+	text-transform: uppercase;
+	font-family: 'Montserrat','sans-serif';
+	color:#684F40;
+	}
+
+p {
+	font-family: 'Open Sans', 'sans-serif';
+	}
+
+.carouselContainer{
+	overflow: hidden;
+	}
+
+/*			Table of Content
+    ------------------------------------
+	Deze ToC geldt voor alle Queries
+
+
+	------------------------------------
+*	  Header including navigation
+*	------------------------------------
+*	   Hero Image
+*	------------------------------------
+*	   Product Section
+*	------------------------------------
+*  	   Testimonial Section
+*	------------------------------------
+*  	   Main Services Section
+*   ------------------------------------
+*  	   About and Email Section
+*	------------------------------------
+*  	   Footer and Extra information Section
+*   ------------------------------------
+*/
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #Header including navigation
+\*------------------------------------*/
+
+header{
+	border-bottom:2px solid rgb(104,79,64);
+	padding: 2% 0;
+	
+	}
+
+header>h1{
+	visibility: hidden;
+	font-size: 0;
+	}
+
+header nav #current{
+	color:rgba(253,184,34,1.00);
+	}
+
+header nav {
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 2rem;
+	font-family: 'Montserrat';
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	}
+
+header nav li {
+	display: inline-block;
+	text-decoration: none;
+	border-right: 1px solid rgba(204,204,204,1.00);
+	}
+
+header nav li:nth-of-type(8){
+	border:none;
+	}
+
+header nav li a:link,
+header nav li a:visited{
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(104,79,64);
+	}
+
+header nav li a:hover{
+	color:rgba(253,184,34,1.00);
+	}
+
+header nav li a:active{
+	position:relative;
+	top:3px;
+	left:2px;
+	}
+
+header #show-menu,
+header #show-menu-label{
+	font-size:0;
+	}
+
+
+
+
+/*------------------------------------*\
+  #Hero Image
+\*------------------------------------*/
+
+.heroImage{
+	margin:0.8rem 0;
+	padding:10rem 0;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),url(../images/bg/M-slide-2.jpg);
+	background-position: center center;
+	background-size: cover;
+	color: rgba(255,255,255,1);
+	}
+
+.heroImage h2{
+	margin: 0 auto 2%;
+	text-align: center;
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform:none;
+	word-spacing:0.6rem;
+	}
+
+	
+
+.heroImage p{
+	margin:0 auto;
+	text-align: center;
+	font-family:'Open Sans';
+	font-size: 1rem;
+	}
+
+
+
+
+
+/*------------------------------------*\
+  #Product Section
+\*------------------------------------*/
+.products {
+	text-align: center;
+	border-top:2px solid rgb(104,79,64);
+	}
+
+.products h2{
+	padding-bottom:1rem;
+	font-size: 0.8rem;
+	}
+
+.products p {
+	font-family: 'Open Sans';
+	font-size: 0.9rem;
+	letter-spacing: -0.05rem;
+	word-spacing: 0.2rem;
+	color:#696969;
+	width:100%;
+	margin-bottom:3rem;
+	}
+
+.products h2::after {
+	display:block;
+	margin:1rem auto;
+	content:" ";
+	height:2px;
+	background-color:#ccc;
+	width:10rem;
+	}
+
+.products h2+p::before{
+	display: block;
+	margin-top: -2.13rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1rem;
+	content: " ";
+	height: 2px;
+	background-color: #FDB822;
+	width: 5rem;
+	}
+
+.products>div>ul{
+	position: relative;
+	top:0;
+	left:0;
+	}
+
+.products>div>ul>li{
+	float: left;
+	border: 2px solid #684F40;
+	box-sizing: border-box;
+	position:relative;
+	}
+
+
+.products>div>ul>li:hover img{
+	opacity:0.6;
+	}
+
+.products>div>ul>li>ul{
+	opacity:0;
+	width:100%;
+	height:30%;
+	padding:10% 0;
+	position: absolute;
+	bottom:0;
+	left:0;
+	color:rgba(255,255,255,1);
+	background-color:rgba(253,184,34,0.9) ;
+	line-height: 1.6rem;
+	}
+
+.products>div>ul>li:hover>ul {
+	opacity:0.9;
+	}
+
+.products picture+div{
+	width:100%;
+	opacity: 0;
+	}
+
+/*Klikbare Icoontjes .products*/
+.products picture+div a{
+	opacity:1;
+	width:20%;
+	height: 20px;
+	display: inline-block;
+	background-color: white;
+	color:#FDB822;
+	top: 50%;
+	left:10%;
+	font-family: fontAwesome;
+	border: 1px solid #FDB822;
+	border-radius: 50px;
+	position: absolute;
+	z-index:999;	
+	text-decoration: none;
+	}
+
+.products li div a:first-child{
+	left: 10%;
+	}
+
+.products li div a:nth-child(2){
+	left:40%
+	}
+
+.products li div a:nth-child(3){
+	left:70%
+	}
+
+.products li:hover div{
+	opacity: 1;
+	}
+	
+.products>div>ul>li>ul>li{
+	font-family: 'Montserrat';
+	font-size:0.9rem;
+	}
+
+.products>div>ul>li>ul>li+li{
+	font-family: 'Open Sans';
+	font-size:0.7rem;
+	}
+
+.products>div>ul>li>ul>li+li+li{
+	font-family: 'Montserrat';
+	font-size:1.1rem;
+	}
+
+.products .pagination+p{
+	width:13rem;
+	margin:4% auto;
+	border:2px solid #684F40;
+	text-transform: uppercase;
+	padding:0.8rem 0;
+	font-family: 'Montserrat';
+	font-size:0.8rem;
+	color: #684F40;
+	font-weight:bold;
+	}
+
+
+.products>div>ol>li{
+	display:inline-block;
+	}
+
+.products .pagination p:after{
+	font-family: FontAwesome;
+    content: "\f111";
+    font-size: 0.6rem;
+	color:#684F40; 
+	border:1px solid #000;
+	padding:0.15rem 0.2rem;
+	text-align:center;
+	border-radius: 50%;
+	position:relative;
+	left:-1px;
+	}
+
+
+.products .carouselContainer{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	top:0;
+	left:0;
+	height:auto;
+	}
+
+
+
+
+/*------------------------------------*\
+  #Testimonial Section
+\*------------------------------------*/
+
+.testimonial{
+	background:rgba(253,184,34,1.00);
+	}
+
+.testimonial .carouselContainer{
+	padding:2rem 1.2rem 1rem;
+	overflow: hidden;
+	position: relative;
+	}
+
+.testimonial .slider{
+	width:330%;
+	position: relative;
+	top:0;
+	left:0;
+	text-align: right;
+	animation-name: carouselSliderTestimonial;
+	animation-delay: 0s;
+	animation-duration: 40s;
+	animation-iteration-count: infinite;
+	}
+
+.testimonial .customer{
+	position: relative;
+	width:29%;
+	float:left;
+	margin-right:4%;
+	margin-bottom: 1.5rem;
+	}
+
+.testimonial .customer:last-child{
+	margin-right:0;
+	margin-bottom: 1.5rem;
+	}
+
+.testimonial img{
+	border: 10px solid #f4f0cb;
+	transform: rotate(-6.5deg)
+	}
+
+.testimonial cite{
+	font-family: 'Montserrat','sans-serif';
+	}
+
+.testimonial blockquote p{
+	text-align: right;
+	margin-left: auto;
+	font-family: 'Montserrat';
+	color:#684F40;
+	}
+
+.testimonial .pagination p:after{
+	font-family: FontAwesome;
+    content: "\f111";
+    font-size: 0.6rem;
+	color:#684F40; 
+	border:1px solid #000;
+	padding:0.15rem 0.2rem;
+	text-align:center;
+	border-radius: 50%;
+	position:relative;
+	left:-1px;
+	}
+
+
+/*------------------------------------*\
+  #Main Services Section
+\*------------------------------------*/
+
+.main-services{
+	padding:2rem 1.2rem;
+	text-align: center;
+	height:auto;
+	}
+
+.main-services h1{
+	padding-bottom:1rem ;
+	font-family: 'Montserrat','sans-serif';
+	color:#684F40;
+	text-transform:uppercase;
+	font-size:0.8rem
+	}
+
+.main-services h2{
+	font-size: 0.8rem;
+	letter-spacing:-0.04rem;
+	}
+
+.main-services h1::after{
+	display:block;
+	margin:1rem auto;
+	content:" ";
+	height:2px;
+	background-color:#ccc;
+	width:10rem;
+	}
+
+.main-services h1+p{
+	font-size: 0.8rem;
+	color: #000;
+	}
+
+.main-services h1+p::before{
+	display: block;
+	margin-top: -2.13rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1rem;
+	content: " ";
+	height: 2px;
+	background-color: #FDB822;
+	width: 5rem;
+	}
+
+.main-services h2::after{
+	display:block;
+	margin:1rem auto;
+	content:" ";
+	height:2px;
+	background-color:#FDB822;
+	width:5rem;
+	}
+
+.main-services p{
+	font-size: 0.7rem;
+	color: #696969;
+	padding:0rem 0rem 1rem 0;
+	line-height: 1.2rem
+	}
+
+.main-services .service::before{
+	width:7rem;
+	height:7rem;
+	padding:2rem;
+	margin:2rem auto 1rem;
+	content:"";
+	display:block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-origin: content-box;
+	border:2px solid #684F40;
+	border-radius: 50%;
+	}
+
+.main-services .service:first-of-type::before{background-image: url(../images/icons-logos/breads.svg);}
+.main-services .service:nth-of-type(2)::before{background-image: url(../images/icons-logos/cakes.svg);}
+.main-services .service:nth-of-type(3)::before{background-image: url(../images/icons-logos/cookies.svg);}
+.main-services .service:last-of-type::before{background-image: url(../images/icons-logos/muffins.svg);}
+
+
+
+
+/*------------------------------------*\
+  #About and Email Section
+\*------------------------------------*/
+.about{
+	color:#ccc;
+	background-color: #333333;
+	padding:2rem 1.2rem;
+	font-family: 'Open Sans','sans-serif';
+	}
+
+.about h2{
+	color:#ccc;
+	font-size:1rem;
+	margin-bottom:0.5rem;
+	}
+
+
+.about [type=email]{
+	background-color: #333333;
+	border: 1px solid #ccc;
+	}
+
+.about [type=submit]{
+	border: 2px solid #ccc;
+	font-family: 'Montserrat';
+	letter-spacing:-0.05rem;
+	color: #333333;
+	vertical-align: top;
+	}
+
+
+/*------------------------------------*\
+  #  Footer and Extra information Section
+\*------------------------------------*/
+
+footer {
+	color: #ccc;
+	background-color: #28292b;
+	background-image: url(../images/icons-logos/logo-footer-background.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	font-family: 'Open Sans','sans-serif';
+	font-size: 0.8rem;
+	padding: 0.5rem 1.2rem 5rem;
+	}
+
+footer h1{
+	visibility: hidden;
+	font-size:0;
+	}
+
+footer h2{
+	color:#fff;
+	font-size:0.8rem;
+	margin-bottom:1rem; 
+	}
+
+footer a:link,footer a:visited{
+	text-decoration: none;
+	color: #ccc;
+	}
+
+footer div{
+	padding-top:2rem;
+	}
+
+footer #footerSocMed li{
+	font-size: 0;
+	display:inline-block;
+	}
+
+
+footer #footerSocMed li a::before{
+	font-size: 0.9rem;
+	padding:0.5rem;
+	display:inline-block;
+	border:2px solid #ccc;
+	border-radius: 50%;
+	text-align: center;
+	font-family: 'FontAwesome';
+	}
+
+footer #footerSocMed li:first-child a::before{  /*facebook icoon bij ronden*/
+	padding:0.5rem 0.65rem; 
+	}
+
+footer #footerSocMed li:hover a::before{
+	color:#28292b;
+	background-color:#ccc;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	}
+
+#footerSocMed  li:nth-of-type(1) a::before{content:'\f09a';}
+#footerSocMed  li:nth-of-type(2) a::before{content:'\f099';}
+#footerSocMed  li:nth-of-type(3) a::before{content:'\f09e';}
+#footerSocMed  li:nth-of-type(4) a::before{content:'\f0d2';}
+#footerSocMed  li:nth-of-type(5) a::before{content:'\f0e1';}
+
+footer #footerContactUs{
+	font-weight: 700;
+	line-height: 1.5rem;
+	}
+	
+footer [datetime]{
+	font-style: italic;
+	}
+
+footer #footerContactUs [href^=tel]:before{
+	content:'\f095';
+	font-family: 'FontAwesome';
+	margin-right:0.6rem;
+	}
+
+footer #footerContactUs li:nth-of-type(2):before{
+	content:'\f124';
+	font-family:'FontAwesome';
+	margin-right:0.6rem;
+	}
+
+footer #footerContactUs [href^=mailto]:before{
+	content:'\f0e0';
+	font-family: 'FontAwesome';
+	margin-right:0.5rem;
+	}
+
+footer #footerContactUs [href^=http]:before{
+	content:'\f0ac';
+	font-family:'FontAwesome';
+	margin-right:0.5rem;
+	}
+
+footer div:last-child{
+	margin-bottom: 0;
+	}
+
+footer section #back-to-top {
+	padding-top: 0.5rem;
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
+	border: 2px solid #CCC;
+	border-radius: 50%;
+	color: #CCC;
+	float: right;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: 1rem;
+	}
+

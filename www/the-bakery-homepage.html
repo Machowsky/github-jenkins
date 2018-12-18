@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>The Bakery: The country's largest en best bakery!</title>
+	<!-- code hier toevoegen -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+	<link href="css/eric-meyer-reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/bakery-styles.css" rel="stylesheet">
+	<link href="css/bakery-media-styles.css" rel="stylesheet">
+</head>
+<body id="top">
+	<header><!-- Code in de header niet wijzigen. Bevat navigatiemenu en logo.  -->
+		<h1>The Bakery: The country's largest en best bakery!</h1>
+		<nav>
+			<label for="show-menu" id="show-menu-label">Show menu</label><!-- Toegevoegd voor hambuger-menu-->
+			<input type="checkbox" id="show-menu" role="button" /><!-- Toegevoegd voor hambuger-menu-->
+			<ul>
+				<li><a id="current" href="/">Home</a></li>
+				<li><a href="about/">About</a></li>
+				<li><a href="menu/">Menu</a></li>
+				<li><a href="products/">Products</a></li>
+				<li><a href="gallary/">Gallery</a></li>
+				<li><a href="pages/">Pages</a></li>
+				<li><a href="blog/">Blog</a></li>
+				<li><a href="contact/">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- code hier toevoegen -->
+	
+	<!--              HERO-IMAGE                -->
+	<section class="heroImage">
+		<h2>A delicious range of bread</h2>
+		<p>We have a large variety to suit all taste buds</p>
+	</section>
+	
+	<!-- START MAIN CONTENT -->
+	<main>
+		
+  	
+  		<!--              PRODUCTS                -->
+	  	<section class="products">
+			<h2>Our latest bakery products</h2>
+			<p>Check some of our best products and feel the great passion for food.</p>
+            <div class="carouselContainer">
+              <ul>
+                <li>
+                  <picture>
+                  	 <source media="(max-width: 512px)" srcset="images/products/coffee.jpg" />
+                  	 <source media="(min-width: 513px)" srcset="images/products/coffee-large.jpg"/>
+                  	 <img src="images/products/coffee-large.jpg" alt="Coffee"/> 
+                  </picture>
+                  <div><a href=""></a><a href=""></a><a href=""></a></div>
+                  <ul>
+					<li>Coffee</li>
+                  	<li>Breakfast</li>
+                  	<li>$1.50</li>
+                  </ul>
+                </li>
+                
+                <li>
+                	<picture>
+                  		<source media="(max-width: 512px)" srcset="images/products/pistache-cake.jpg" />
+                  		<source media="(min-width: 513px)" srcset="images/products/pistache-cake-large.jpg" />
+                  	 	<img src="images/products/pistache-cake-large.jpg" alt="Pistache Cake"/> 
+                 	</picture>
+                 	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                  	<ul>
+                    	<li>Pistache Cake</li>
+                    	<li>Cakes</li>
+                    	<li>$13.50</li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<picture>
+                  		<source media="(max-width: 512px)" srcset="images/products/fruit-cheesecake.jpg" />
+                  		<source media="(min-width: 513px)" srcset="images/products/fruit-cheesecake-large.jpg" />
+                  	 	<img src="images/products/fruit-cheesecake-large.jpg" alt="Fruit Cheescake"/> 
+                  	</picture>
+                  	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                  	<ul>
+                    	<li>Fruit Cheesecake</li>
+                    	<li>Cheesecakes</li>
+                    	<li>$9.50</li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<picture>
+                 		<source media="(max-width: 512px)"  srcset="images/products/tiramisu.jpg" />
+                 		<source media="(min-width: 513px)" srcset="images/products/tiramisu-large.jpg" />
+                  	 	<img src="images/products/tiramisu-large.jpg" alt="Tiramisu"/> 
+                 	</picture>
+                 	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                 	<ul>
+                    	<li>Tiramisu</li>
+                    	<li>Specialties</li>
+                    	<li>$13.50</li>
+                 	</ul>
+                </li>
+                
+                <li>
+                	<picture>
+                  		<source media="(max-width: 512px)" srcset="images/products/bagels.jpg" />
+                  		<source media="(min-width: 513px)" srcset="images/products/bagels-large.jpg" />
+                  	 	<img src="images/products/bagels-large.jpg" alt="Bagels"/> 
+                  	</picture>
+                  	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                  	<ul>
+                    	<li>Bagels</li>
+                    	<li>Breakfast</li>
+                    	<li>$2.50</li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<picture>
+                  		<source media="(max-width: 512px)" srcset="images/products/chocolate-cake.jpg" />
+                  		<source media="(min-width: 513px)" srcset="images/products/chocolate-cake-large.jpg" />
+                  	 	<img src="images/products/chocolate-cake-large.jpg" alt="Chocolate Cake"/> 
+                  	</picture>
+                  	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                  	<ul>
+                    	<li>Chocolate Cake</li>
+                    	<li>Cakes</li>
+                    	<li>$14.50</li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<picture>
+                		<source media="(max-width: 512px)" srcset="images/products/vanilla-muffins.jpg" />
+                 	 	<source media="(min-width: 513px)" srcset="images/products/vanilla-muffins-large.jpg" />
+                  	 	<img src="images/products/vanilla-muffins-large.jpg" alt="Vanilla Muffins"/> 
+                	</picture>
+                	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                 	<ul>
+                    	<li>Vanilla Muffins</li>
+                    	<li>Muffins</li>
+                    	<li>$5.50</li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<picture>
+                		<source media="(max-width: 512px)" srcset="images/products/truffels.jpg" />
+                 	 	<source media="(min-width: 513px)" srcset="images/products/truffels-large.jpg"/>
+                  	 	<img src="images/products/truffels-large.jpg" alt="Truffels"/> 
+                	</picture>
+                	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                 	<ul>
+                    	<li>Truffels</li>
+                    	<li>Specialties</li>
+                    	<li>$16.50</li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<picture>
+                  	 	<source media="(max-width: 512px)" srcset="images/products/breakfast.jpg" />
+                  	 	<source media="(min-width: 513px)" srcset="images/products/breakfast-large.jpg" />
+                  	 	<img src="images/products/breakfast-large.jpg" alt="Breakfast"/> 
+                  	</picture>
+                  	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                  	<ul>
+                  		<li>Luxury Breakfast</li>
+                    	<li>Breakfast</li>
+                    	<li>$14.50</li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<picture>
+                  	 	<source media="(max-width: 512px)" srcset="images/products/bread.jpg" />
+                  	 	<source media="(min-width: 513px)" srcset="images/products/bread-large.jpg" />
+                  	 	<img src="images/products/bread-large.jpg" alt="Bread"/> 
+                  	</picture>
+                  	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                  	<ul>
+                    	<li>Bread</li>
+                    	<li>Bread</li>
+                    	<li>$3.50</li>
+                    </ul>
+                </li>
+                
+                <li>
+                	 <picture>
+                  	 
+                  	 <source media="(max-width: 512px)" srcset="images/products/chocolate-fruitcake.jpg" />
+                  	 <source media="(min-width: 513px)" srcset="images/products/chocolate-fruitcake-large.jpg" />
+                  	 <img src="images/products/chocolate-fruitcake-large.jpg" alt="Chocolate Fruitcake"/> 
+                  </picture>
+                  <div><a href=""></a><a href=""></a><a href=""></a></div>
+                  <ul>
+                    <li>Chocolate Fruitcake</li>
+                    <li>Cakes</li>
+                    <li>$9.50</li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<picture>
+                  		<source media="(max-width: 512px)" srcset="images/products/chocolate-cookies.jpg" />
+                  		<source media="(min-width: 513px)" srcset="images/products/chocolate-cookies-large.jpg" />
+                  	 <img src="images/products/chocolate-cookies-large.jpg" alt="Chocolate Cookies"/> 
+                  	</picture>
+                  	<div><a href=""></a><a href=""></a><a href=""></a></div>
+                  	<ul>
+                    	<li>Chocolate Cookies</li>
+                    	<li>Cookies</li>
+                    	<li>$3.50</li>
+                    </ul>
+                </li>
+              </ul>
+            </div><!--EINDE PRODUCT CARDS-->
+			
+			<div class="pagination">
+				<ol>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+					<li><p> </p></li>
+				</ol>
+			</div>
+			<p>See all our products</p>
+		</section>
+		
+		
+		<!--             TESTIMONIAL                -->
+		<section class="testimonial">
+	    	<div class="carouselContainer">
+              <div class="slider">
+                <div class="customer">
+                  <picture>
+                  	 <source media="(max-width: 512px)" srcset="images/testimonials/testimonial-jean-fletcher.jpg">
+                     <source media="(min-width: 513px)" srcset="images/testimonials/testimonial-jean-fletcher-large.jpg">	
+                  	 <img src="images/testimonials/mTestimonial-3.jpg" alt="">
+                  </picture>
+                  <cite>Jean Fletcher</cite>
+                  <blockquote cite="jean-fletcher">
+                  	<p>Many thanks to everybody at Bakery for the gorgeous 35th birthday cake which was enjoyed by all on Sunday. You have won a new legion of fans. Much love to you all.
+                    </p>
+                  </blockquote>
+                </div>
+                
+                <div class="customer">
+                  <picture>
+                    <source media="(max-width: 512px)" srcset="images/testimonials/testimonial-alex-andrews.jpg">
+                    <source media="(min-width: 513px)" srcset="images/testimonials/testimonial-alex-andrews.jpg">	
+                    <img src="images/testimonials/mTestimonial-3.jpg" alt="">
+                  </picture>
+                  <cite>Alex Andrews</cite>
+                  <blockquote cite="alex-andrews">
+                    <p>My golly! Their fresh lorum ipsum sandwich deluxe must be about the best thing i ever tasted! My wife forbids me to eat them these days. But I also appreciate the different kinds of bread.
+                    </p>
+                  </blockquote>
+                  </div>
+                
+                <div class="customer">
+                  <picture>
+                    <source media="(max-width: 512px)" srcset="images/testimonials/testimonial-max-mcman.jpg">
+                    <source media="(min-width: 513px)" srcset="images/testimonials/testimonial-max-mcman-large.jpg">	
+                    <img src="images/testimonials/mTestimonial-3.jpg" alt="">
+                    </picture>
+                  <cite>Max Mcman</cite>
+                  <blockquote cite="max-mcman">
+                    <p>If you never had a lorum ipsum Muffin? Shame on you. The bakery has earned their credits and is a must on your bucket-list! Thanks for the good care, the kids loved it!
+                    </p>
+                    </blockquote>
+                  </div>
+              </div>
+		 		
+		 		
+			</div>
+	  	 </section>
+		
+		
+		<!--             MAIN SERVICES              -->
+	  <section class="main-services">
+			<h1>Main services we provide</h1>
+			<p>Our services are the best in town, we provide great quality baked products.</p>
+			<div class="service">
+				<h2>Lots of Bread</h2>
+				<p>We bake and deliver fresh bread seven days a week to our cafes, farmers’ markets and grocery stored throughout the NY city.</p>
+			</div>
+
+			<div class="service">
+				<h2>Cakes</h2>
+				<p>We are dedicated to making cakes that are both moist and flavorful. All of our cakes are frosted and decorated with precision.</p>
+			</div>
+
+			<div class="service">
+				<h2>Cookies</h2>
+				<p>Our sumptuous sugar cookies are a labor of love. They are made from scratch using only the finest ingredients and extracts.</p>
+			</div>
+
+			<div class="service">
+				<h2>Muffins</h2>
+				<p>Our muffins can be decorated to suit any occasion. From birthdays to weddings, our muffins are the perfect single-serving confection.</p>
+			</div>
+		</section>
+	</main>
+	
+	
+	<!--             ABOUT SECTION               -->
+	<section class="about">
+      <div>
+        <div>
+          <h2>About</h2>
+          <p>Bakery was formed in 2014 after the merger of the two largest bakeries in the country; The Creative Muffin and Westcoast Bread. With over 200 employees, there isn’t a job too big or too ambitious.</p>
+          </div>
+    	  
+         <div>
+         	<h2>Subscribe</h2>
+         	<p>Give us your email, and we shall send regular updates for new stuff and events.</p>
+          	<input type="email" name="email" />
+          	<input type="submit" value="SUBSCRIBE"/>
+         </div>
+      </div>
+	</section>
+	<!-- code hier toevoegen -->
+	
+	<footer><!-- Code in de footer niet wijzigen. Bevat contact en marketing info. -->
+		<h1>Extra information about the Bakery</h1>
+		
+		<div>
+			<h2>Working time</h2>
+			<p>Monday - Friday: <time datetime="08:00">8:00 am</time> - <time datetime="20:30">8:30 pm</time> 
+			Saturday - Sunday: <time datetime="10:00">10:00 am</time> - <time datetime="16:30">4:30 pm</time>
+			</p>
+		</div>
+		
+		<div>
+			<h2>Happy Hours</h2>
+			<p>Join us for Happy Hour!<br>Enjoy discount baked goods.
+			<time datetime="08:00">8:00 am</time>-<time datetime="17:00">5:00 pm </time> Daily
+			</p>
+		</div>
+		
+		<div>
+			<h2>Follow us</h2>
+			<ul id="footerSocMed">
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">RSS Feed</a></li>
+				<li><a href="#">Pinterest</a></li>
+				<li><a href="#">LinkedIn</a></li>
+			</ul>
+		</div>
+		
+		<div>
+			<h2>Contact us</h2>
+			<address>
+				<ul id="footerContactUs">
+					<li><a href="tel:080012345688">0 800 123 456 88</a></li>
+					<li>30 Hampton Road Southhampton, NY 11968</li>
+					<li><a href="mailto:info@bakerytheme.com">info@bakerytheme.com</a></li>
+					<li><a href="http://www.bakerytheme.com">www.bakerytheme.com</a></li>
+				</ul>
+			</address>
+		</div>
+		<section class="container">
+			<a id="back-to-top" href="#top" title="Back to top">
+				<span class="fa fa-arrow-up" aria-hidden="true"></span>
+			</a>
+		</section>
+	</footer>
+</body>
+</html>
